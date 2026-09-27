@@ -5,29 +5,18 @@ foundation > base
 ------------------------------
 */
 :root {
-  --base-vw: 375;
-
-  @include g.mq() {
-    --base-vw: 1366;
-  }
-}
-
-* {
-  letter-spacing: 0.05em;
-}
-
-html {
-  font-size: calc(100vw / var(--base-vw));
+  --width-content-s: 342px;
+  --width-content: 760px;
 }
 
 body {
   line-height: 1.7;
-  font-size: 16rem;
-  font-family: var(--font-family-base);
-  color: var(--color-font-base);
-  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--font-family);
+  color: var(--color-base-text);
+  font-weight: 400;
 
   @include g.mq() {
-    font-size: 18rem;
+    font-size: 18px;
   }
 }
