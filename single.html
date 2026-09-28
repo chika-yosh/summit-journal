@@ -38,36 +38,20 @@
   <body>
     <!-- header -->
     <header class="l-header">
-      <div class="l-header-head l-container">
-        <p class="l-header-logo">
+      <div class="l-container">
+        <h1 class="l-header-logo">
           <a href="index.html">
-            <picture>
-              <!-- pc -->
-              <source media="(min-width: 768px)" srcset="img/logo-pc.png" />
-              <!-- sp -->
-              <img src="img/logo-sp.png" alt="模写修行" width="180" height="28" decoding="async" />
-            </picture>
-            <span class="u-visually-hidden">模写修行</span>
+            <img src="img/logo.png" alt="山頂ジャーナル" width="240" height="59" decoding="async" />
+            <span class="u-visually-hidden">山頂ジャーナル</span>
           </a>
-        </p>
-
-        <ul class="c-sns">
-          <li class="c-sns-icon">
-            <a href="https://x.com" target="_blank" rel="noreferrer noopener"><img src="img/icon-sns-x.svg" alt="x" width="32" height="32" decoding="async" /></a>
-          </li>
-          <li class="c-sns-icon">
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="img/icon-sns-facebook.svg" alt="facebook" width="32" height="32" decoding="async" /></a>
-          </li>
-        </ul>
+        </h1>
       </div>
-
-      <nav class="l-header-nav">
-        <ul class="l-header-nav-list l-container">
-          <li class="l-header-nav-item"><a href="archive.html">HTML/CSS</a></li>
-          <li class="l-header-nav-item"><a href="archive.html">JavaScript</a></li>
-          <li class="l-header-nav-item"><a href="archive.html">WordPress</a></li>
-          <li class="l-header-nav-item"><a href="archive.html">webデザイン</a></li>
-          <li class="l-header-nav-item"><a href="archive.html">web制作</a></li>
+      <nav class="l-header-nav" aria-label="ヘッダーナビゲーション">
+        <ul class="l-header-nav-list">
+          <li class="l-header-nav-item l-header-nav-item--current"><a href="index.html">登山記録</a></li>
+          <li class="l-header-nav-item"><a href="gallery.html">ギャラリー</a></li>
+          <li class="l-header-nav-item"><a href="author.html">運営者情報</a></li>
+          <li class="l-header-nav-item"><a href="contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
     </header>
@@ -198,35 +182,14 @@
 
     <!-- footer -->
     <footer class="l-footer">
-      <div class="l-container">
-        <div class="l-footer-body">
-          <div class="l-footer-info">
-            <div class="l-footer-logo">
-              <a href="index.html"><img src="img/logo-footer.png" alt="模写修行" width="320" height="42" decoding="async" /></a>
-            </div>
-            <p class="l-footer-description">
-              <span>武者への道は駆け出しデザイナー・エンジニアを</span>
-              <span>応援するメディアです。</span>
-            </p>
-
-            <ul class="c-sns">
-              <li class="c-sns-icon">
-                <a href="https://x.com" target="_blank" rel="noreferrer noopener"><img src="img/icon-sns-x.svg" alt="x" width="32" height="32" decoding="async" /></a>
-              </li>
-              <li class="c-sns-icon">
-                <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="img/icon-sns-facebook.svg" alt="facebook" width="32" height="32" decoding="async" /></a>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="l-footer-list">
-            <li class="l-footer-item"><a href="about.html">武者への道とは</a></li>
-            <li class="l-footer-item"><a href="company.html">会社概要</a></li>
-            <li class="l-footer-item"><a href="privacy.html">プライバシーポリシー</a></li>
-            <li class="l-footer-item"><a href="contact.html">お問い合わせ</a></li>
-          </ul>
-        </div>
-        <small class="l-footer-copyright">&copy; 2025 Road to MUSHA inc.</small>
+      <div class="l-container l-footer-inner">
+        <ul class="l-footer-list">
+          <li class="l-footer-item"><a href="index.html">登山記録</a></li>
+          <li class="l-footer-item"><a href="gallery.html">ギャラリー</a></li>
+          <li class="l-footer-item"><a href="author.html">運営者情報</a></li>
+          <li class="l-footer-item"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+        <small class="l-footer-copyright">&copy; 2024 山頂ジャーナル</small>
       </div>
     </footer>
   </body>
