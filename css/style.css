@@ -152,6 +152,7 @@ component > post
 .c-post-thumbnail img {
   border-radius: 16px;
   aspect-ratio: 342/234;
+  object-fit: cover;
 }
 
 .c-post-date {
@@ -482,6 +483,7 @@ page > gallery
 .gallery-img {
   aspect-ratio: 342/285;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -498,6 +500,23 @@ page > gallery
 page > author
 ------------------------------
 */
+.author-content {
+}
+
+.author-content img {
+  aspect-ratio: 342/186;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .author-content img {
+    aspect-ratio: 760/413;
+  }
+}
+.author-content-text {
+  margin-top: 24px;
+}
 
 /*!
 page > contact
