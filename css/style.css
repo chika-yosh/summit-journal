@@ -196,7 +196,7 @@ component > form
 
 .c-form-text--textarea {
   /* textareaの高さを内容に合わせて調整 */
-  field-sizing: content;
+/* field-sizing: content;
 } */
 
 /*!
@@ -240,71 +240,60 @@ layout > header
 ------------------------------
 */
 
-.l-header-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
+.l-header {
+  background-color: var(--color-primary);
+  padding: 32px 8px 24px;
 }
 
 .l-header-logo {
   width: 180px;
+  margin-inline: auto;
 }
 
 @media screen and (min-width: 768px) {
   .l-header-logo {
-    width: 320px;
+    width: 240px;
   }
 }
 
 .l-header-nav {
-  background-color: var(--color-primary);
-  padding: 8px 0;
+  padding-top: 16px;
+  /* headerのpadding分を打ち消して、スクロール可能な範囲を画面幅いっぱいにする */
+  margin-inline: -8px;
 }
 
 .l-header-nav-list {
   display: flex;
-  overflow: scroll;
+  gap: 4px;
+  overflow-x: auto;
+  /* l-containerと同じ位置に最初/最後の項目が揃うようにする余白 */
+  padding-inline: calc((100% - min(90%, var(--width-content))) / 2);
 
-  /* scrollbarを非表示にする */
+  -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.l-header-nav-list::-webkit-scrollbar {
-  /* scrollbarを非表示にする */
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .l-header-nav-list {
     justify-content: center;
   }
 }
 
+.l-header-nav-list::-webkit-scrollbar {
+  display: none;
+}
+
 .l-header-nav-item {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 1;
   color: var(--color-white);
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
 }
 
-@media screen and (min-width: 768px) {
-  .l-header-nav-item {
-    font-size: 14px;
-  }
-}
-
-.l-header-nav-item:not(:last-child):after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 21px;
-  background-color: var(--color-white);
-  margin: 0 16px;
+.l-header-nav-item--current {
+  background-color: var(--color-primary-dark);
 }
 
 /*!
