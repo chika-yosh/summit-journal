@@ -82,9 +82,15 @@ utility
   }
 }
 
-/* .u-mt40 {
+.u-mt {
   margin-top: 40px;
-} */
+}
+
+@media screen and (min-width: 768px) {
+  .u-mt {
+    margin-top: 48px;
+  }
+}
 
 /*!
 component > button
@@ -458,12 +464,38 @@ page > single
 }
 
 /*!
-page > author
+page > gallery
 ------------------------------
 */
+.gallery-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gallery-img {
+  aspect-ratio: 342/285;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-img-1 {
+    grid-column: span 2 / span 2;
+  }
+
+  .gallery-img-2 {
+    grid-column: span 2 / span 2;
+  }
+}
 
 /*!
-page > gallery
+page > author
 ------------------------------
 */
 
