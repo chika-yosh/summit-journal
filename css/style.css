@@ -98,7 +98,9 @@ component > button
   border: 3px solid currentColor;
   font-weight: bold;
   border-radius: 100vh;
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .c-button-link {
@@ -133,9 +135,6 @@ component > post
 ------------------------------
 */
 .c-post {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .c-post-link {
@@ -147,6 +146,7 @@ component > post
 
 .c-post-thumbnail img {
   border-radius: 16px;
+  aspect-ratio: 342/234;
 }
 
 .c-post-date {
@@ -165,6 +165,7 @@ component > post
   font-size: 20px;
   font-weight: bold;
   line-height: 1.6;
+  margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -267,7 +268,7 @@ layout > header
   gap: 4px;
   overflow-x: auto;
   /* l-containerと同じ位置に最初/最後の項目が揃うようにする余白 */
-  padding-inline: calc((100% - min(90%, var(--width-content))) / 2);
+  padding-inline: calc((100% - min(90%, var(--width-content))) / 4);
 
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
@@ -356,6 +357,27 @@ layout > footer
   .l-footer-copyright {
     font-size: 16px;
   }
+}
+
+/*!
+page > top
+------------------------------
+*/
+.top-posts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.top-button {
+  margin-top: 40px;
+  text-align: center;
 }
 
 /*!
