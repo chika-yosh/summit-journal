@@ -39,52 +39,39 @@
     <!-- header -->
     <header class="l-header">
       <div class="l-container">
-        <h1 class="l-header-logo">
+        <p class="l-header-logo">
           <a href="index.html">
             <img src="img/logo.png" alt="山頂ジャーナル" width="240" height="59" decoding="async" />
             <span class="u-visually-hidden">山頂ジャーナル</span>
           </a>
-        </h1>
+        </p>
       </div>
       <nav class="l-header-nav" aria-label="ヘッダーナビゲーション">
         <ul class="l-header-nav-list">
-          <li class="l-header-nav-item l-header-nav-item--current"><a href="index.html">登山記録</a></li>
+          <li class="l-header-nav-item"><a href="index.html">登山記録</a></li>
           <li class="l-header-nav-item"><a href="gallery.html">ギャラリー</a></li>
           <li class="l-header-nav-item"><a href="author.html">運営者情報</a></li>
-          <li class="l-header-nav-item"><a href="contact.html">お問い合わせ</a></li>
+          <li class="l-header-nav-item l-header-nav-item--current"><a href="contact.html">お問い合わせ</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="l-container-s u-ptb">
-      <h1 class="c-title-level1">お問い合わせ</h1>
-      <p class="contact-note">お問い合わせは下記のフォーム、もしくはお電話にて承ります。</p>
+    <main class="l-container u-ptb">
+      <h1 class="c-title">お問い合わせ</h1>
 
-      <form action="" class="contact-form">
-        <div class="contact-item">
-          <label for="company-name" class="contact-label">法人名</label>
-          <input id="company-name" type="text" class="c-form-text" placeholder="株式会社ABC" />
-        </div>
-
+      <form action="" class="contact-form u-mt">
         <div class="contact-item">
           <label for="name" class="contact-label">お名前</label>
-          <input id="name" type="text" class="c-form-text" placeholder="山田 太郎" />
-        </div>
-
-        <div class="contact-item">
-          <label for="email" class="contact-label">メールアドレス</label>
-          <input id="email" type="email" class="c-form-text" placeholder="taro@example.com" />
+          <input id="name" type="text" class="contact-form-text" placeholder="山田 太郎" />
         </div>
 
         <div class="contact-item">
           <label for="contact-content" class="contact-label">お問い合わせ内容</label>
-          <textarea name="contact-content" id="contact-content" class="c-form-text c-form-text--textarea contact-textarea" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+          <textarea name="contact-content" id="contact-content" class="contact-form-text contact-form-text--textarea contact-textarea" placeholder="お問い合わせ内容をご記入ください。"></textarea>
         </div>
 
-        <!-- form -->
-
         <div class="contact-button-wrap">
-          <button class="c-button">送信する</button>
+          <button class="c-button contact-button">送信する</button>
         </div>
       </form>
     </main>
