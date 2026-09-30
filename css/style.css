@@ -100,9 +100,6 @@ component > button
   margin-inline: auto;
 }
 
-.c-button-link {
-}
-
 .c-button--contact {
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -131,12 +128,6 @@ component > title
 component > post
 ------------------------------
 */
-.c-post {
-}
-
-.c-post-link {
-}
-
 .c-post-thumbnail {
   position: relative;
 }
@@ -363,8 +354,6 @@ page > top
 page > single
 ------------------------------
 */
-.single-article {
-}
 
 .single-title {
   text-align: left;
@@ -466,8 +455,6 @@ page > gallery
 page > author
 ------------------------------
 */
-.author-content {
-}
 
 .author-content img {
   aspect-ratio: 342/186;
@@ -540,10 +527,6 @@ page > contact
 .contact-textarea {
   height: 200px;
 }
-
-.contact-button-wrap {
-}
-
 .contact-button {
   color: var(--color-white);
   background-color: var(--color-primary);
